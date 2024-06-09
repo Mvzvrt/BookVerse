@@ -1,41 +1,35 @@
 import React, { useState } from 'react';
-import { Box, Button, List, ListItem, ListItemText, Avatar, Divider } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
+import { Box, IconButton, Drawer, List, ListItem, ListItemText, Avatar, ListItemAvatar } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Sidebar = () => {
-  const [expanded, setExpanded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => {
-    setExpanded(!expanded);
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <Box sx={{ display: 'flex' }}>
-      <Box
-        sx={{
-          width: expanded ? 240 : 60,
-          bgcolor: 'grey.800', // Using a dark gray color
-          color: 'white',
-          transition: 'width 0.3s',
-          overflow: 'hidden',
-          height: '100vh', // Full height sidebar
-        }}
-      >
-        <Button onClick={handleToggle} sx={{ m: 1, color: 'white' }}>
-          {expanded ? '<' : '>'}
-        </Button>
-        {expanded && (
-          <>
-            <Divider sx={{ bgcolor: 'white' }} />
-            <List>
-              <ListItem button component={RouterLink} to="/profile">
-                <Avatar alt="User Name" src="/static/images/avatar/1.jpg" />
-                <ListItemText primary="User Name" sx={{ ml: 2 }} />
-              </ListItem>
-            </List>
-          </>
-        )}
-      </Box>
+    <Box sx={{ height: '100%' }}>
+      <IconButton onClick={toggleDrawer} color="inherit" aria-label="open drawer">
+        <MenuIcon />
+      </IconButton>
+      <Drawer anchor="left" open={isOpen} onClose={toggleDrawer}>
+        <Box sx={{ width: 250, height: '100%', bgcolor: 'primary.main' }}>
+          <List>
+            <ListItem button>
+              <ListItemAvatar>
+                <Avatar alt="User Profile" src="/path/to/profile/pic" />
+              </ListItemAvatar>
+              <ListItemText primary="User Name" sx={{ marginLeft: 1 }} />
+            </ListItem>
+            <ListItem button component="a" href="/profile">
+              <ListItemText primary="Profile" />
+            </ListItem>
+            {/* Add more sidebar items here */}
+          </List>
+        </Box>
+      </Drawer>
     </Box>
   );
 };

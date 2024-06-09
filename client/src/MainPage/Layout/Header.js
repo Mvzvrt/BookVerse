@@ -10,8 +10,7 @@ const Header = () => {
           BookVerse
         </Typography>
         <Button color="inherit" component={RouterLink} to="/main">Home</Button>
-        <Button color="inherit" component={RouterLink} to="/profile">Profile</Button>
-        <Button color="inherit" component={RouterLink} to="/admin">Admin</Button>
+        <Button color="inherit" component={RouterLink} to="/login">Log Out</Button>
       </Toolbar>
     </AppBar>
   );
