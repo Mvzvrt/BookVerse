@@ -4,6 +4,7 @@ import LogIn from './LandingPage/LoginForm';
 import SignUp from './LandingPage/SignupForm';
 import Main from './MainPage/Main';
 import BookDetail from './MainPage/Books/BookDetails';
+import ProfilePage from './MainPage/User/ProfilePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<LogIn />} />
         <Route path="/main" element={<Main />}/>
         <Route path="/book/:id" element={<BookDetail />}/>
+        <Route path="/profile" element={<ProfilePage />}/>
       </Routes>
     </Router>
   );

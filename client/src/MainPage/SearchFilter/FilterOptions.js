@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormControl, InputLabel, Select, MenuItem, Box } from '@mui/material';
+import StarIcon from '@mui/icons-material/Star';
 
 const FilterOptions = ({ genre, setGenre, rating, setRating }) => {
   const handleGenreChange = (event) => {
@@ -8,6 +9,15 @@ const FilterOptions = ({ genre, setGenre, rating, setRating }) => {
 
   const handleRatingChange = (event) => {
     setRating(event.target.value);
+  };
+
+  // Function to render star icons based on the rating value
+  const renderStars = (count) => {
+    const stars = [];
+    for (let i = 0; i < count; i++) {
+      stars.push(<StarIcon key={i} />);
+    }
+    return stars;
   };
 
   return (
@@ -33,11 +43,11 @@ const FilterOptions = ({ genre, setGenre, rating, setRating }) => {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          <MenuItem value="5">5 Stars</MenuItem>
-          <MenuItem value="4">4 Stars</MenuItem>
-          <MenuItem value="3">3 Stars</MenuItem>
-          <MenuItem value="2">2 Stars</MenuItem>
-          <MenuItem value="1">1 Star</MenuItem>
+          <MenuItem value="5">{renderStars(5)}</MenuItem>
+          <MenuItem value="4">{renderStars(4)}</MenuItem>
+          <MenuItem value="3">{renderStars(3)}</MenuItem>
+          <MenuItem value="2">{renderStars(2)}</MenuItem>
+          <MenuItem value="1">{renderStars(1)}</MenuItem>
         </Select>
       </FormControl>
     </Box>
