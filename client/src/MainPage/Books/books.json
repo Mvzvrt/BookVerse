@@ -1,0 +1,23 @@
+[
+    { "id": 1, "title": "Book One", "genre": "fiction", "rating": 5 },
+    { "id": 2, "title": "Book Two", "genre": "non-fiction", "rating": 4 },
+    { "id": 3, "title": "Book Three", "genre": "fantasy", "rating": 3 },
+    { "id": 4, "title": "Book Four", "genre": "mystery", "rating": 5 },
+    { "id": 5, "title": "Book Five", "genre": "science-fiction", "rating": 2 },
+    { "id": 6, "title": "Book Six", "genre": "biography", "rating": 4 },
+    { "id": 7, "title": "Book Seven", "genre": "fiction", "rating": 3 },
+    { "id": 8, "title": "Book Eight", "genre": "non-fiction", "rating": 5 },
+    { "id": 9, "title": "Book Nine", "genre": "fantasy", "rating": 4 },
+    { "id": 10, "title": "Book Ten", "genre": "mystery", "rating": 2 },
+    { "id": 11, "title": "Book Eleven", "genre": "science-fiction", "rating": 5 },
+    { "id": 12, "title": "Book Twelve", "genre": "biography", "rating": 3 },
+    { "id": 13, "title": "Book Thirteen", "genre": "fiction", "rating": 4 },
+    { "id": 14, "title": "Book Fourteen", "genre": "non-fiction", "rating": 5 },
+    { "id": 15, "title": "Book Fifteen", "genre": "fantasy", "rating": 2 },
+    { "id": 16, "title": "Book Sixteen", "genre": "mystery", "rating": 4 },
+    { "id": 17, "title": "Book Seventeen", "genre": "science-fiction", "rating": 3 },
+    { "id": 18, "title": "Book Eighteen", "genre": "biography", "rating": 5 },
+    { "id": 19, "title": "Book Nineteen", "genre": "fiction", "rating": 2 },
+    { "id": 20, "title": "Book Twenty", "genre": "non-fiction", "rating": 3 }
+  ]
+  

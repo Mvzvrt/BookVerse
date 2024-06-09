@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Grid } from '@mui/material';
 import BookCard from './BookCard';
-
-const books = [
-  { id: 1, title: 'Book One', genre: 'fiction', rating: 5 },
-  { id: 2, title: 'Book Two', genre: 'non-fiction', rating: 4 },
-  // Add more books here
-];
+import booksData from '../Books/books.json'
 
 const BookList = ({ searchQuery, genre, rating }) => {
+    const [books, setBooks] = useState([]);
+    useEffect(() => {
+        setBooks(booksData);
+    }, []);
+
   const filteredBooks = books.filter((book) => {
     const matchesSearch = book.title.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesGenre = genre ? book.genre === genre : true;
