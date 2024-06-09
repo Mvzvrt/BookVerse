@@ -17,7 +17,12 @@ const BookCard = ({ book }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" component={RouterLink} to={`/books/${book.id}`}>
+        <Button
+          size="small"
+          component={RouterLink}
+          to={`/book/${book.id}`}
+          state={{ book }}
+        >
           Learn More
         </Button>
       </CardActions>

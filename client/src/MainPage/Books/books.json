@@ -1,23 +1,203 @@
 [
-    { "id": 1, "title": "Book One", "genre": "fiction", "rating": 5 },
-    { "id": 2, "title": "Book Two", "genre": "non-fiction", "rating": 4 },
-    { "id": 3, "title": "Book Three", "genre": "fantasy", "rating": 3 },
-    { "id": 4, "title": "Book Four", "genre": "mystery", "rating": 5 },
-    { "id": 5, "title": "Book Five", "genre": "science-fiction", "rating": 2 },
-    { "id": 6, "title": "Book Six", "genre": "biography", "rating": 4 },
-    { "id": 7, "title": "Book Seven", "genre": "fiction", "rating": 3 },
-    { "id": 8, "title": "Book Eight", "genre": "non-fiction", "rating": 5 },
-    { "id": 9, "title": "Book Nine", "genre": "fantasy", "rating": 4 },
-    { "id": 10, "title": "Book Ten", "genre": "mystery", "rating": 2 },
-    { "id": 11, "title": "Book Eleven", "genre": "science-fiction", "rating": 5 },
-    { "id": 12, "title": "Book Twelve", "genre": "biography", "rating": 3 },
-    { "id": 13, "title": "Book Thirteen", "genre": "fiction", "rating": 4 },
-    { "id": 14, "title": "Book Fourteen", "genre": "non-fiction", "rating": 5 },
-    { "id": 15, "title": "Book Fifteen", "genre": "fantasy", "rating": 2 },
-    { "id": 16, "title": "Book Sixteen", "genre": "mystery", "rating": 4 },
-    { "id": 17, "title": "Book Seventeen", "genre": "science-fiction", "rating": 3 },
-    { "id": 18, "title": "Book Eighteen", "genre": "biography", "rating": 5 },
-    { "id": 19, "title": "Book Nineteen", "genre": "fiction", "rating": 2 },
-    { "id": 20, "title": "Book Twenty", "genre": "non-fiction", "rating": 3 }
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "genre": "fiction",
+      "rating": 5,
+      "author": "F. Scott Fitzgerald",
+      "description": "A classic novel of the Jazz Age, exploring themes of decadence and excess.",
+      "publishedDate": "1925-04-10",
+      "isbn": "9780743273565"
+    },
+    {
+      "id": 2,
+      "title": "Sapiens: A Brief History of Humankind",
+      "genre": "non-fiction",
+      "rating": 4,
+      "author": "Yuval Noah Harari",
+      "description": "An exploration of the history and impact of Homo sapiens.",
+      "publishedDate": "2011-06-04",
+      "isbn": "9780062316097"
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "genre": "fantasy",
+      "rating": 5,
+      "author": "J.K. Rowling",
+      "description": "A young boy discovers he is a wizard and attends a magical school.",
+      "publishedDate": "1997-06-26",
+      "isbn": "9780590353427"
+    },
+    {
+      "id": 4,
+      "title": "The Da Vinci Code",
+      "genre": "mystery",
+      "rating": 4,
+      "author": "Dan Brown",
+      "description": "A symbologist uncovers secrets hidden in the works of Leonardo da Vinci.",
+      "publishedDate": "2003-03-18",
+      "isbn": "9780385504201"
+    },
+    {
+      "id": 5,
+      "title": "Dune",
+      "genre": "science-fiction",
+      "rating": 5,
+      "author": "Frank Herbert",
+      "description": "A science fiction saga about politics, religion, and power on the desert planet Arrakis.",
+      "publishedDate": "1965-08-01",
+      "isbn": "9780441013593"
+    },
+    {
+      "id": 6,
+      "title": "Steve Jobs",
+      "genre": "biography",
+      "rating": 4,
+      "author": "Walter Isaacson",
+      "description": "The authorized biography of Apple co-founder Steve Jobs.",
+      "publishedDate": "2011-10-24",
+      "isbn": "9781451648539"
+    },
+    {
+      "id": 7,
+      "title": "To Kill a Mockingbird",
+      "genre": "fiction",
+      "rating": 5,
+      "author": "Harper Lee",
+      "description": "A story of racial injustice and childhood in the American South.",
+      "publishedDate": "1960-07-11",
+      "isbn": "9780061120084"
+    },
+    {
+      "id": 8,
+      "title": "Educated",
+      "genre": "non-fiction",
+      "rating": 5,
+      "author": "Tara Westover",
+      "description": "A memoir about growing up in a strict and abusive household in rural Idaho.",
+      "publishedDate": "2018-02-20",
+      "isbn": "9780399590504"
+    },
+    {
+      "id": 9,
+      "title": "The Hobbit",
+      "genre": "fantasy",
+      "rating": 5,
+      "author": "J.R.R. Tolkien",
+      "description": "A hobbit's adventure to help dwarves reclaim their mountain home from a dragon.",
+      "publishedDate": "1937-09-21",
+      "isbn": "9780547928227"
+    },
+    {
+      "id": 10,
+      "title": "Gone Girl",
+      "genre": "mystery",
+      "rating": 4,
+      "author": "Gillian Flynn",
+      "description": "A thriller about a marriage gone wrong and the secrets it hides.",
+      "publishedDate": "2012-06-05",
+      "isbn": "9780307588371"
+    },
+    {
+      "id": 11,
+      "title": "The Martian",
+      "genre": "science-fiction",
+      "rating": 5,
+      "author": "Andy Weir",
+      "description": "An astronaut becomes stranded on Mars and must find a way to survive.",
+      "publishedDate": "2011-02-11",
+      "isbn": "9780553418026"
+    },
+    {
+      "id": 12,
+      "title": "Becoming",
+      "genre": "biography",
+      "rating": 4,
+      "author": "Michelle Obama",
+      "description": "A memoir by the former First Lady of the United States.",
+      "publishedDate": "2018-11-13",
+      "isbn": "9781524763138"
+    },
+    {
+      "id": 13,
+      "title": "Pride and Prejudice",
+      "genre": "fiction",
+      "rating": 5,
+      "author": "Jane Austen",
+      "description": "A romantic novel that also critiques the British landed gentry at the end of the 18th century.",
+      "publishedDate": "1813-01-28",
+      "isbn": "9781503290563"
+    },
+    {
+      "id": 14,
+      "title": "The Immortal Life of Henrietta Lacks",
+      "genre": "non-fiction",
+      "rating": 4,
+      "author": "Rebecca Skloot",
+      "description": "The story of Henrietta Lacks and the immortal cell line, known as HeLa, that came from her cervical cancer cells.",
+      "publishedDate": "2010-02-02",
+      "isbn": "9781400052189"
+    },
+    {
+      "id": 15,
+      "title": "The Name of the Wind",
+      "genre": "fantasy",
+      "rating": 4,
+      "author": "Patrick Rothfuss",
+      "description": "A fantasy novel about a young man who grows up to become a famous figure.",
+      "publishedDate": "2007-03-27",
+      "isbn": "9780756404741"
+    },
+    {
+      "id": 16,
+      "title": "The Girl with the Dragon Tattoo",
+      "genre": "mystery",
+      "rating": 5,
+      "author": "Stieg Larsson",
+      "description": "A mystery novel involving a journalist and a computer hacker.",
+      "publishedDate": "2005-08-18",
+      "isbn": "9780307454546"
+    },
+    {
+      "id": 17,
+      "title": "Neuromancer",
+      "genre": "science-fiction",
+      "rating": 4,
+      "author": "William Gibson",
+      "description": "A science fiction novel that helped define the cyberpunk genre.",
+      "publishedDate": "1984-07-01",
+      "isbn": "9780441569597"
+    },
+    {
+      "id": 18,
+      "title": "The Diary of a Young Girl",
+      "genre": "biography",
+      "rating": 5,
+      "author": "Anne Frank",
+      "description": "The wartime diary of a Jewish girl hiding from the Nazis.",
+      "publishedDate": "1947-06-25",
+      "isbn": "9780553296983"
+    },
+    {
+      "id": 19,
+      "title": "1984",
+      "genre": "fiction",
+      "rating": 5,
+      "author": "George Orwell",
+      "description": "A dystopian novel about a totalitarian regime that uses surveillance and control to maintain power.",
+      "publishedDate": "1949-06-08",
+      "isbn": "9780451524935"
+    },
+    {
+      "id": 20,
+      "title": "Outliers: The Story of Success",
+      "genre": "non-fiction",
+      "rating": 4,
+      "author": "Malcolm Gladwell",
+      "description": "An analysis of the factors that contribute to high levels of success.",
+      "publishedDate": "2008-11-18",
+      "isbn": "9780316017930"
+    }
   ]
   
