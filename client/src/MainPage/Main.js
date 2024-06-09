@@ -13,12 +13,9 @@ const Main = () => {
       <Box sx={{ display: 'flex', flexGrow: 1 }}>
         <Sidebar />
         <Container maxWidth="lg" sx={{ flexGrow: 1, mt: 4 }}>
-            {/*
-                <ResponsiveGrid>
+            <ResponsiveGrid>
                 <BookList />
-                </ResponsiveGrid>
-            */}
-          
+            </ResponsiveGrid>
         </Container>
       </Box>
       <Footer />

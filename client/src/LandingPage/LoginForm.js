@@ -11,10 +11,7 @@ import {
   Paper,
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { Link as RouterLink } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-
-
+import { Link as RouterLink, useNavigate } from 'react-router-dom';
 
 const LogIn = () => {
   const [email, setEmail] = useState('');
